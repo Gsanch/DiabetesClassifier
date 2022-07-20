@@ -16,7 +16,7 @@ def mydata(request):
         firstname=form.cleaned_data['firstname']
         lastname=form.cleaned_data['lastname']
         age=form.cleaned_data['age']
-        insulinname=form.cleaned_data['insulin']
+
        
         
         
