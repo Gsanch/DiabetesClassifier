@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>testing</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div class="navbar">
+	  <a class="active" href="#"> </a>
+
+	</div>
+	<h2> predicating diabetes form </h2>
+    
+    <div class="container ">
+        <form action=""method="POST">
+
+          <div class="mb-3 mt-3">
+            <label for="Fname" class="form-label">Firstname:</label>
+            <input type="text" class="form-control" id="Fname" placeholder="Enter Firstname" name="uname" required>
+            <div class="valid-feedback"></div>
+            <div class="invalid-feedback"></div>
+          </div>
+      
+          <div class="mb-3 mt-3">
+            <label for="uname" class="form-label">Lastname:</label>
+            <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+            <div class="valid-feedback"></div>
+            <div class="invalid-feedback"></div>
+          </div>
+        
+          
+          <div class="mb-3 mt-3">
+            <label for="urage" class="form-label">Age:</label>
+            <input type="text" class="form-control" id="urage" placeholder="Enter Age" name="urage" required>
+            <div class="valid-feedback"></div>
+            <div class="invalid-feedback"></div>
+          </div>
+
+            
+          <div class="mb-3 mt-3">
+           <label for="weight" class="form-label">weight:</label>
+            <input type="text" class="form-control" id="weight" placeholder="Enter weight" name="weight" required>
+            <div class="valid-feedback"></div>
+            <div class="invalid-feedback"></div>
+          </div>
+
+          
+          <div class="mb-3 mt-3">
+            <label for="height" class="form-label">height:</label>
+            <input type="text" class="form-control" id="height" placeholder="Enter height" name="height" required>
+            <div class="valid-feedback"></div>
+            <div class="invalid-feedback"></div>
+          </div>
+          <div class="form-check mb-3">
+                    <p>Are you now taking insulin?</p>
+                    <input class="form-check-input" type="checkbox" id="myCheck"  name="insulin" required>
+                    <label class="form-check-label" for="myCheck">yes</label>
+                    <div class="valid-feedback"></div>
+                    <div class="invalid-feedback"></div>
+            
+                    <input class="form-check-input" type="checkbox" id="myCheck"  name="insulin" required>
+                    <label class="form-check-label" for="myCheck">no</label>
+                    <div class="valid-feedback"></div>
+                    <div class="invalid-feedback"></div>
+                    <input class="form-check-input" type="checkbox" id="myCheck"  name="insulin" required>
+                    <label class="form-check-label" for="myCheck">never</label>
+                    <div class="valid-feedback"></div>
+                    <div class="invalid-feedback"></div>
+                  </div>
+
+              
+            
+              <div class="mb-3 mt-3">
+                <label">Have you EVER been told by a doctor that you have high blood pressure?</label><br>
+                <input type="radio" id="firstpressure"  name="pressure" value="yes">
+                <label for="firstpressure">yes</label><br>
+                <input type="radio" id="secondpressure" name="pressure" value="no">
+                <label for="secondpressure">no</label><br><br>
+              </div>
+              
+            <div class="mb-3 mt-3">
+                <label>When was the last time you had an eye exam in which the pupils were dilated? This would have made you 
+                  temporarily sensitive to bright light.</label><br>
+                  <select class="form-dropdown" id="input_7" name="eye" style="width:310px" 
+                  data-component="dropdown">
+                  <option value=""> please select an option </option>
+                  <option value="within the past month"> within the past month</option>
+                  <option value="within the past year"> within the past month </option>
+                  <option value="within 2 years"> within the past month </option>
+                  <option value="more than 2 years"> within the past month </option>
+                  <option value="dont't know"> within the past month </option>
+                  <option value="never"> within the past month</option>
+                  </select><br><br>
+                  </div>
+
+
+                <div class="mb-3 mt-3">
+                <label>About how often do you check your blood for glucose or sugar?</label><br>
+                <select class="form-dropdown" id="input_7" name="glucose" style="width:310px" 
+                  data-component="dropdown">
+                  <option value=""> please select an option </option>
+                  <option value="101-199"> Times per aday</option>
+                  <option value="201-299"> Times per aweek </option>
+                  <option value="301-399"> Times per amonth </option>
+                  <option value="401-499"> Times per ayear</option>
+                  <option value="777"> don't know </option>
+                  <option value="888"> never </option>
+
+                  </select><br><br>
+
+              </div>
+              <div class="form-check mb-3">
+                <label> Has a doctor ever told you that diabetes has affected your eyes or that you had retinopathy?</label><br>
+                <input type="checkbox" id="answer1" name="retinopathy" value="yes">
+                <label for="answer1"> yes</label><br>
+                <input type="checkbox" id="answer2" name="retinopathy" value="no">
+                <label for="answer2"> no</label><br>
+                <input type="checkbox" id="answer3" name="retinopathy" value="never">
+                <label for="answer3">don't know</label><br><br>
+                  </div>
+
+            <button type="submit" class="btn btn-secondary">Submit</button><br><br>
+            
+          </form>
+    </div>
+  </div>
+    
+
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+      
+</body>
+</html>
