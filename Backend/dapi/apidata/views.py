@@ -1,16 +1,21 @@
+import re
 from django.template import RequestContext
 from django.shortcuts import render
 from rest_framework.viewsets import ModelViewSet 
 from .models import testresult
 from .forms import testform
 from .serializers import testresultSerializers
+import pickle
+from django.views.decorators.csrf import csrf_exempt
 
 class Adressview (ModelViewSet):
     serializer_class = testresultSerializers
     queryset = testresult.objects.all()
 # Create your views here.
-
+@csrf_exempt
 def mydata(request):
+    print("Hello")
+    print(request)
     if request.method=='POST':
         form=testform(request.POST)
         #validation
@@ -22,11 +27,10 @@ def mydata(request):
         Bloodpressure=form.cleaned_data['Bloodpressure']
         # Glucose=form.cleaned_data['glucose']
         # eyedamage=form.cleaned_data['eyedamage']
-        retinopathy=form.cleaned_data['retinopathy']
+        retinopathy=form.cleaned_data['retinopathy'] 
 
         with open('trained_model', 'rb') as trained_model:
-            return
-        diabetic= pickle.load(trained_model)
+            clf= pickle.load(trained_model)
 
     
  
