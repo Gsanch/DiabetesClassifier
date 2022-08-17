@@ -34,12 +34,14 @@ print (df)
 x= df[['Glucose','retinopathy','BMI','Blood pressure','phyical health','Age']]# Features
 y= df['Output'] # Labels
 clf=RandomForestClassifier(n_estimators=100)
-with open('trained_model', 'wb') as trained_model:
-    pickle.dump(clf, trained_model)
+
+   
 
 # Split dataset into traning set and test set
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.3) # 70% training and 30% test
 clf.fit(x_train,y_train)
+with open('trained_model', 'wb') as trained_model:
+    pickle.dump(clf, trained_model)    
 y_pred=clf.predict(x_test)
 print("Accuracy:",metrics.accuracy_score(y_test,y_pred))
 
