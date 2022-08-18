@@ -28,17 +28,7 @@ def mydata(request):
         BMI=request.POST.get['BMI']
         Bloodpressure=request.POST.get['Bloodpressure']
         retinopathy=request.POST.get['retinopathy'] 
-        # form=testform(request.POST)
-        #validation
-        # firstname=form.cleaned_data['firstname']
-        # lastname=form.cleaned_data['lastname']
-        # age=form.cleaned_data['age']
-        # insulin=form.cleaned_data['insulin']
-        # BMI=form.cleaned_data['BMI']
-        # Bloodpressure=form.cleaned_data['Bloodpressure']
-        # # Glucose=form.cleaned_data['glucose']
-        # # eyedamage=form.cleaned_data['eyedamage']
-        # retinopathy=form.cleaned_data['retinopathy'] 
+        
     sample=[[firstname,lastname,age,insulin,BMI,Bloodpressure,retinopathy]]
     result=clf.predict(sample)
     print(result)
@@ -50,7 +40,4 @@ def mydata(request):
        
         
         
-    # form=testform()
-    # return render(request, 'testing.html', {'form':form})
-    # return render_to_response('fileupload/upload.html', {'testing': c['UploadFiletesting']},  RequestContext(request))
 
