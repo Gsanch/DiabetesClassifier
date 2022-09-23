@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes Diagnosis Test</title>
+
+    <link href="/css/bootstrap.min.css" rel="stylesheet" >
+    <link href="/awe/css/all.css" rel="stylesheet" >
+    <link href="/css/style.css" rel="stylesheet" >
+
+</head>
+<body>
+    <div class="">
+        <div class="nav"><p><a href="index.html"class="text-light text-decoration-none">Diabetes App</a></p></div>
+            <section class="container content">
+                <div class="heading">
+                    <h1>Diabetes Diagnosis</h1>
+                    <p>Make life easier test today for diabetes</p>
+                    <a href="#test"><button type="button" class="btn btn-warning mt-3">Start Testing</button></a>
+                </div>
+
+                <div class="about">
+                    <h6>About</h6>
+                    <p>Diabetes App is developed to Diagnose Diabetes using machine learning and django framework </p>
+                </div>
+            </section>
+          </div>
+        <div class="test">
+            <div class="container testing-form">  
+                <div id="test">
+                    <h2>Testing Form</h2>
+                 <p>please fill the form below</p>
+                </div>  
+               
+                <div class="form-info">
+
+                 
+                    <form action="result.html"method="POST">
+                       
+                        <div class="details">
+                            <label  class="form-label">1. What do you say in generally about your health ?</label>
+                            <select class="form-select" aria-label="">
+                                <option selected></option>
+                                <option value="1">Excellent</option>
+                                <option value="2">Very good</option>
+                                <option value="3">Good</option>
+                                <option value="4">Fair</option>
+                                <option value="5">Poor</option>
+                                <option value="6">Don't know</option>
+                            </select>
+                        </div>
+
+                        <div class="details">
+                            <label  class="form-label">2. Have you had a depression disorder (including depression, major depression, dysthymia or minor depression) ?</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                  Yes
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                  No
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                  Don't know
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                  Both continuo
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="details">
+                            <label  class="form-label">3. Do you have difficulty walking or climbing stairs? ?</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                  Yes
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                  No
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                  Don't know
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="details">
+                            <label  class="form-label">4.Enter your weight and height </label>
+                           
+                        </div>
+
+
+
+                        <div class="details">
+                            <label  class="form-label">5. Have you ever told by doctor that you have a high blood pressure?</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                  Yes
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                  No
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                  Don't know
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="details">
+                            <label  class="form-label">6. Are you changing your eating habits to control your high blood pressure?</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                  Yes
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                  No 
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                  Don't know
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="details">
+                            <label  class="form-label">7. Have ever told you have kidney disease (frequently urination)?</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                  Yes
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                  No 
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                  Don't know
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="details">
+                            <label  class="form-label">8. Because of physical, mental or emotional condition, do you have a serious difficulty concerntrating remembering, or making decisions?</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                  Yes
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                  No 
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                  Don't know
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="details">
+                            <label  class="form-label">9. Have you ever had a heart attack (myocardial infarction?)</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                  Yes
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                  No 
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                  Don't know
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <!-- <a href="result.html"><button type="submit" class="btn btn-warning mt-3">Submit</button></a> -->
+                        <a href="result.html"><button type="button" class="btn btn-warning mt-3">Submit</button></a>
+                    </form>
+                           <!-- pagination -->
+                     <!-- <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                        <li class="nav-link px-2 link-light">Prev < </li>
+                        <li class="nav-link px-2 link-light active">1</li>
+                        <li class="nav-link px-2 link-light">2</li>
+                        <li class="nav-link px-2 link-light">3</li>
+                        <li class="nav-link px-2 link-light"> > Next</li>
+                      </ul>
+                     </div> -->
+            </div>
+        </div>
+        
+        <a href="#"class="up"><img src="/images/up.png"width="60px" alt="^"></a>
+        <footer>Copyright&copy;Diabetes App 2022</footer>
+    </div>
+
+    <script src="/js/bootstrap.bundle.min.js" ></script>
+    <script src="/js/script.js" ></script>
+</body>
+</html>
